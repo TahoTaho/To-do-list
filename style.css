@@ -5,10 +5,9 @@ div {
 
 .container {
     display: flex;
-    flex-direction: column;
 }
 
-.task-container {
+.task-in-progress, .task-completed {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -17,7 +16,6 @@ div {
     background-color: bisque;
     height: 500px;
     width: 800px;
-    overflow: hidden;
     overflow-y: scroll;
 }
 
@@ -50,18 +48,17 @@ div {
     background-color: darkgrey;
     padding: 20px;
     display: flex;
-
+    border-radius: 20px;
 }
 
 .task-description {
     flex-grow: 1;
 }
 
-.task-done {
+.task-done-button, .task-remove-button{
     padding: 10px;
 }
 
-.remove-task {
-    align-self: flex-end;
-}
+
+
 
